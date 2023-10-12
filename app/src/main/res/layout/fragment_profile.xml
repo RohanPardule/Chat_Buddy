@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+     android:background="@drawable/circular_background"
+     android:backgroundTint="@color/my_primary"
+        android:src="@drawable/baseline_person_24"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/profile_imgView"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="10dp"
+        android:hint="Username"
+        android:id="@+id/profile_username"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_corner"
+        android:elevation="5dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="10dp"
+        android:hint="Phone"
+        android:id="@+id/profile_phone"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:enabled="false"
+        android:background="@drawable/rounded_corner"
+        android:elevation="5dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+       android:layout_marginTop="20dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPDATE PROFILE"
+            android:id="@+id/profile_update_btn"/>
+        <ProgressBar
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/my_primary"
+            android:layout_gravity="center"
+            android:id="@+id/profile_progress_bar"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/logout_btn"/>
+
+</LinearLayout>
